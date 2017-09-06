@@ -1,0 +1,43 @@
+Solutions of Problems:
+Certification Error:
+•	C:\jdk\1.8.0_45_x64\jre\bin  cmd
+•	keytool.exe -keystore ..\lib\security\cacerts -import -alias https://dam.dev.thecapitalgroup.com -file C:\Users\inyvasg\Downloads\damdevthecapitalgroupcom.crt
+•	password : changeit
+•	next type: yes
+Whitelisting of Bundle:
+•	go to osgi configurations 
+•	search for keyword whitelist
+•	click on add and give a name to config and bundle symbolic name
+
+UI Changes:
+•	Customize UI to add FileName as Column.
+•	Customize UI to add FileExtension as Column.
+•	In Search Result add FileName and FileExtension as Column.
+•	References should show the title of the assets.
+•	Add Reference  checkbox in the download option. (incomplete).
+•	Add ImageType checkbox in Filter (CS in 6.2 nd 6.3)
+o	Tools ->Form Search ->Assets Admin Search Rail ->Options Predicate addition
+•	For Filename and File extension:
+o	sAssets->Metadatschemas->apply to folder->you will get file name and file extension as columns.
+
+Workflows:
+•	DAM Metadata update asset
+•	DAM Metadata Writeback:
+Alpha environment Setup:
+•	Install STS(Spring Tool Suite) latest version from CGC app center
+•	Connect to ClearCase->AFWG/AFWG_pvob2->Projects->dam-Dev->substreams->aem63_dam-dev(Join it - uncheck the integration view)
+•	For PerlSetUp ->Set Environment Path variable for PERL SetUp - PATh - C:\Users\inyvivk\Desktop\cgbatch_win32_perl583_complete\Perl\bin
+•	Go to your -> aem63_dam-dev view in My Views(Clear case perspective)->rightclick->showClearcase configuration->Edit AFWGDam->select javalibs ->ok
+•	Set JavaLibs Path - JAVALIBS_VIEW - C:\Users\inyvivk\inyvivk_aem63_dam-dev\AFWG\java-libs 
+•	refer - > C:\Users\inyvivk\inyvivk_aem63_dam-dev\AFWG\dam\alp -> look for AEM_A_SERVER_HOME & AEM_A_SERVER_JAR string under set_env batch file  for AEM 6.3 folder creation
+•	C:\Users\inyvivk\inyvivk_aem63_dam-dev\AFWG\dam\alp - run set_env.cmd command or type s ->tab ->enter
+•	C:\Users\inyvivk\inyvivk_aem63_dam-dev\AFWG\dam\alp - cmd -> start_alp.cmd command or type start ->tab->enter
+Deprecated API and Annotations  Solution:
+http://www.one-inside.com/aem6-resourceresolver-access-in-services/
+https://cwiki.apache.org/confluence/display/SLING/Service+Authentication
+DAM Update features:
+https://confluence.capgroup.com/display/NGM/AEM+6.3+major+updates
+
+
+
+
